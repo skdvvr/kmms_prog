@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include "sortSlyan.hpp"
 
 void mergeSort( std::vector< int > & start_vector,int left_border, int right_border,int & pairs);
 void merge(std::vector< int > & start_vector ,int left_border,int new_len,int right_border, int & pairs);
@@ -7,19 +8,19 @@ void merge(std::vector< int > & start_vector ,int left_border,int new_len,int ri
 int main(){
     int len;
     int pairs = 0;
-    std::cout < < "введите длину вектора";
-    std::cin > > len;
+    std::cout << "введите длину вектора";
+    std::cin >> len;
 
     std::vector < int > start_vector( len );
-    std::cout < < "Введите элементы вектора";
+    std::cout << "Введите элементы вектора";
     for (int i = 0 ; i < len ; i++){
         int element;
-        std::cin > > element;
+        std::cin >> element;
         start_vector[i] = element;
     }
 
     mergeSort(start_vector , 0 , len - 1 , pairs);
-    std::cout < < pairs < < std::endl ;
+    std::cout << pairs << std::endl ;
 }
 
 void mergeSort( std::vector< int > & start_vector,int left_border, int right_border,int & pairs){
@@ -68,7 +69,3 @@ void merge(std::vector< int > & start_vector ,int left_border,int new_len,int ri
         }
     }
 }
-
-
-
-
