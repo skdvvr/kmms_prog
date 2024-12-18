@@ -4,6 +4,8 @@
 
 build_*/
 lib/
+*.user
+*.filters
 
 *.exe
 *.ii
