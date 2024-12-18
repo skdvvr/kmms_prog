@@ -1,22 +1,22 @@
-#include "menu_item.hpp"
+п»ї#include "menu_item.hpp"
 
 #include<cstddef>
 #include "menu_function.hpp"
 
 const Vskudaeva::MenuItem Vskudaeva::STUDY_SUMM = {
-	"1-изучать предметы 1-го класса", Vskudaeva::study_summ, &Vskudaeva::STUDY
+	"1-РёР·СѓС‡Р°С‚СЊ РїСЂРµРґРјРµС‚С‹ 1-РіРѕ РєР»Р°СЃСЃР°", Vskudaeva::study_summ, &Vskudaeva::STUDY
 };
 const Vskudaeva::MenuItem Vskudaeva::STUDY_SUBSTRACT = {
-	"2-изучать предметы 2-го класса", Vskudaeva::study_substract, &Vskudaeva::STUDY
+	"2-РёР·СѓС‡Р°С‚СЊ РїСЂРµРґРјРµС‚С‹ 2-РіРѕ РєР»Р°СЃСЃР°", Vskudaeva::study_substract, &Vskudaeva::STUDY
 };
 const Vskudaeva::MenuItem Vskudaeva::STUDY_MULTIPLY = {
-	"3-изучать предметы 3-го класса", Vskudaeva::study_multiply, &Vskudaeva::STUDY
+	"3-РёР·СѓС‡Р°С‚СЊ РїСЂРµРґРјРµС‚С‹ 3-РіРѕ РєР»Р°СЃСЃР°", Vskudaeva::study_multiply, &Vskudaeva::STUDY
 };
 const Vskudaeva::MenuItem Vskudaeva::STUDY_DIVIDE = {
-	"4-изучать предметы 4-го класса", Vskudaeva::study_divide, &Vskudaeva::STUDY
+	"4-РёР·СѓС‡Р°С‚СЊ РїСЂРµРґРјРµС‚С‹ 4-РіРѕ РєР»Р°СЃСЃР°", Vskudaeva::study_divide, &Vskudaeva::STUDY
 };
 const Vskudaeva::MenuItem Vskudaeva::STUDY_GO_BACK = {
-	"0-главное меню", Vskudaeva::study_go_back, &Vskudaeva::STUDY
+	"0-РіР»Р°РІРЅРѕРµ РјРµРЅСЋ", Vskudaeva::study_go_back, &Vskudaeva::STUDY
 };
 
 namespace {
@@ -32,10 +32,10 @@ namespace {
 }
 
 const Vskudaeva::MenuItem Vskudaeva::STUDY = {
-	"1-предметы какого класса школы вы хотите изучать?", Vskudaeva::show_menu, &Vskudaeva::MAIN, study_children,study_size
+	"1-РїСЂРµРґРјРµС‚С‹ РєР°РєРѕРіРѕ РєР»Р°СЃСЃР° С€РєРѕР»С‹ РІС‹ С…РѕС‚РёС‚Рµ РёР·СѓС‡Р°С‚СЊ?", Vskudaeva::show_menu, &Vskudaeva::MAIN, study_children,study_size
 };
 const Vskudaeva::MenuItem Vskudaeva::EXIT = {
-	"0-я уже закончил школу и все знаю", Vskudaeva::exit, &Vskudaeva::MAIN
+	"0-СЏ СѓР¶Рµ Р·Р°РєРѕРЅС‡РёР» С€РєРѕР»Сѓ Рё РІСЃРµ Р·РЅР°СЋ", Vskudaeva::exit, &Vskudaeva::MAIN
 };
 
 namespace {
@@ -57,23 +57,23 @@ const Vskudaeva::MenuItem Vskudaeva::MAIN = {
 
 
 const Vskudaeva::MenuItem Vskudaeva::RUSSIAN_LANGUAGE = {
-  "1-русский язык", Vskudaeva::study_russian_language, &Vskudaeva::FIRST_GRADE
+  "1-СЂСѓСЃСЃРєРёР№ СЏР·С‹Рє", Vskudaeva::study_russian_language, &Vskudaeva::FIRST_GRADE
 };
 
 const Vskudaeva::MenuItem Vskudaeva::RUSSIAN_LITERATURE = {
-  "2-русская литература", Vskudaeva::study_russian_literature, &Vskudaeva::FIRST_GRADE
+  "2-СЂСѓСЃСЃРєР°СЏ Р»РёС‚РµСЂР°С‚СѓСЂР°", Vskudaeva::study_russian_literature, &Vskudaeva::FIRST_GRADE
 };
 
 const Vskudaeva::MenuItem Vskudaeva::MATHEMATICS = {
-  "3-математика", Vskudaeva::study_mathematics, &Vskudaeva::FIRST_GRADE
+  "3-РјР°С‚РµРјР°С‚РёРєР°", Vskudaeva::study_mathematics, &Vskudaeva::FIRST_GRADE
 };
 
 const Vskudaeva::MenuItem Vskudaeva::PHYSICAL_EDUCATION = {
-  "4-я люблю физкультуру", Vskudaeva::study_physical_education, &Vskudaeva::FIRST_GRADE
+  "4-СЏ Р»СЋР±Р»СЋ С„РёР·РєСѓР»СЊС‚СѓСЂСѓ", Vskudaeva::study_physical_education, &Vskudaeva::FIRST_GRADE
 };
 
 const Vskudaeva::MenuItem Vskudaeva::FIRST_GRADE_GO_BACK = {
-  "0-выйти в предыдущее меню", Vskudaeva::first_grade_go_back, &Vskudaeva::STUDY
+  "0-РІС‹Р№С‚Рё РІ РїСЂРµРґС‹РґСѓС‰РµРµ РјРµРЅСЋ", Vskudaeva::first_grade_go_back, &Vskudaeva::STUDY
 };
 
 namespace {
@@ -88,6 +88,6 @@ namespace {
 }
 
 const Vskudaeva::MenuItem Vskudaeva::FIRST_GRADE = {
-  "1-выберите предмет для изучения в 1-м классе:", Vskudaeva::show_menu, &Vskudaeva::STUDY, first_grade_children, first_grade_size
+  "1-РІС‹Р±РµСЂРёС‚Рµ РїСЂРµРґРјРµС‚ РґР»СЏ РёР·СѓС‡РµРЅРёСЏ РІ 1-Рј РєР»Р°СЃСЃРµ:", Vskudaeva::show_menu, &Vskudaeva::STUDY, first_grade_children, first_grade_size
 };
 
